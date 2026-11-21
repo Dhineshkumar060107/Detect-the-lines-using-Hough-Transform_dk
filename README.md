@@ -1,4 +1,4 @@
-#  Lane Detection
+# Detect-the-lines-using-Hough-Transform
 
 ##  Aim
 
@@ -115,7 +115,7 @@ lines = cv2.HoughLinesP(edges, 1, np.pi / 180, 100, minLineLength=50, maxLineGap
 if lines is not None:
     for line in lines:
         x1, y1, x2, y2 = np.array(line).reshape(-1)
-        cv2.line(image, (x1, y1), (x2, y2), (0, 255, 0), 2)
+        cv2.line(image, (x1, y1), (x2, y2), (0, 255, 0), 5)
 
 # Display the result of Hough Transform (Image with lines)
 plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))  # Image with lines drawn
@@ -153,7 +153,10 @@ plt.show()
 * Result of Hough Transform
 
 
-<img width="476" height="842" alt="image" src="https://github.com/user-attachments/assets/6c3db915-7b15-49e1-927d-ffb949cacc72" />
+
+
+<img width="413" height="733" alt="image" src="https://github.com/user-attachments/assets/2ab673e6-7b09-45ea-81df-5e861cc2fc27" />
+
 
 
 
